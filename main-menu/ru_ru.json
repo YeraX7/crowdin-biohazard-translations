@@ -1,0 +1,14 @@
+{
+    "biohazard.mainmenu.singleplayer": "ОДИНОЧНАЯ ИГРА",
+    "biohazard.mainmenu.multiplayer": "СЕТЕВАЯ ИГРА",
+    "biohazard.mainmenu.bisect": "СОЗДАЙТЕ СВОЙ СЕРВЕР С BISECTHOSTING",
+    "biohazard.mainmenu.bisecthovered": "КОД VOIDCUBE — СКИДКА 25%",
+    "biohazard.mainmenu.mods": "МОДЫ",
+    "biohazard.mainmenu.options": "НАСТРОЙКИ",
+    "biohazard.mainmenu.quitgame": "ВЫЙТИ ИЗ ИГРЫ",
+    "biohazard.mainmenu.dazercredits": "Дизайн меню: DazerDz",
+    "biohazard.startscreen.presstostart": "Нажмите ENTER, чтобы начать",
+    "biohazard.startscreen.credits": "Создано Void Cube Studio.",
+    "biohazard.mainmenu.animatedbg.on": "Включить анимированный фон",
+    "biohazard.mainmenu.animatedbg.off": "Отключить анимированный фон"
+}

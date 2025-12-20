@@ -1,0 +1,14 @@
+{
+    "biohazard.mainmenu.singleplayer": "UN JUGADOR",
+    "biohazard.mainmenu.multiplayer": "MULTIJUGADOR",
+    "biohazard.mainmenu.bisect": "CREA TU SERVIDOR CON BISECTHOSTING",
+    "biohazard.mainmenu.bisecthovered": "CODIGO VOIDCUBE DESCUENTO DEL 25 POR CIENTO",
+    "biohazard.mainmenu.mods": "MODS",
+    "biohazard.mainmenu.options": "OPCIONES",
+    "biohazard.mainmenu.quitgame": "CERRAR JUEGO",
+    "biohazard.mainmenu.dazercredits": "Menus diseñados por DazerDz",
+    "biohazard.startscreen.presstostart": "Presiona ENTER para empezar",
+    "biohazard.startscreen.credits": "Desarrollado por Void Cube Studio.",
+    "biohazard.mainmenu.animatedbg.on": "Activar fondos animados",
+    "biohazard.mainmenu.animatedbg.off": "Desactivar fondos animados"
+  }

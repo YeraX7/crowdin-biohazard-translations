@@ -1,0 +1,14 @@
+{
+    "biohazard.mainmenu.singleplayer": "单人游戏",
+    "biohazard.mainmenu.multiplayer": "多人游戏",
+    "biohazard.mainmenu.bisect": "使用BisectHosting创建您的服务器",
+    "biohazard.mainmenu.bisecthovered": "使用代码 VOIDCUBE 享受 25% 折扣",
+    "biohazard.mainmenu.mods": "模组",
+    "biohazard.mainmenu.options": "选项",
+    "biohazard.mainmenu.quitgame": "退出游戏",
+    "biohazard.mainmenu.dazercredits": "菜单设计：DazerDz",
+    "biohazard.startscreen.presstostart": "按下 ENTER 开始",
+    "biohazard.startscreen.credits": "由 Void Cube Studio 提供支持。",
+    "biohazard.mainmenu.animatedbg.on": "开启动态背景",
+    "biohazard.mainmenu.animatedbg.off": "关闭动态背景"
+}

@@ -1,0 +1,14 @@
+{
+    "biohazard.mainmenu.singleplayer": "シングルプレイ",
+    "biohazard.mainmenu.multiplayer": "マルチプレイ",
+    "biohazard.mainmenu.bisect": "BisectHosting でサーバーを作成",
+    "biohazard.mainmenu.bisecthovered": "コード VOIDCUBE で25％割引",
+    "biohazard.mainmenu.mods": "MOD一覧",
+    "biohazard.mainmenu.options": "オプション",
+    "biohazard.mainmenu.quitgame": "ゲーム終了",
+    "biohazard.mainmenu.dazercredits": "メニューデザイン：DazerDz",
+    "biohazard.startscreen.presstostart": "ENTERキーで開始",
+    "biohazard.startscreen.credits": "Void Cube Studio 提供。",
+    "biohazard.mainmenu.animatedbg.on": "アニメーション背景を有効にする",
+    "biohazard.mainmenu.animatedbg.off": "アニメーション背景を無効にする"
+}
