@@ -1,0 +1,9 @@
+files:
+  - source: biohazard-customs/en_us.json
+    translation: biohazard-customs/%locale_with_underscore%.json
+  - source: ftb-quests/en_us.json
+    translation: ftb-quests/%locale_with_underscore%.json
+  - source: main-menu/en_us.json
+    translation: main-menu/%locale_with_underscore%.json
+  - source: mca/en_us.json
+    translation: mca/%locale_with_underscore%.json
