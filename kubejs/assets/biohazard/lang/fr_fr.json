@@ -1,0 +1,14 @@
+{
+    "biohazard.mainmenu.singleplayer": "JEU SOLO",
+    "biohazard.mainmenu.multiplayer": "MULTIJOUEUR",
+    "biohazard.mainmenu.bisect": "CRÉEZ VOTRE SERVEUR AVEC BISECTHOSTING",
+    "biohazard.mainmenu.bisecthovered": "CODE VOIDCUBE RÉDUCTION DE 25 POURCENT",
+    "biohazard.mainmenu.mods": "MODS",
+    "biohazard.mainmenu.options": "OPTIONS",
+    "biohazard.mainmenu.quitgame": "QUITTER LE JEU",
+    "biohazard.mainmenu.dazercredits": "Menu conçu par DazerDz",
+    "biohazard.startscreen.presstostart": "Appuyez sur ENTRÉE pour commencer",
+    "biohazard.startscreen.credits": "Propulsé par Void Cube Studio.",
+    "biohazard.mainmenu.animatedbg.on": "Activer les arrière-plans animés",
+    "biohazard.mainmenu.animatedbg.off": "Désactiver les arrière-plans animés"
+}

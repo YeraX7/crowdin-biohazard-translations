@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Los .json se guardan tal cual, byte a byte (saltos de linea incluidos): el repo es identico a la instancia.
+# (Esta linea va despues de la general: en .gitattributes manda la ultima que coincide.)
+*.json -text
