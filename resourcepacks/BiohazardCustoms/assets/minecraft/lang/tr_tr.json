@@ -1,0 +1,14 @@
+{
+  "book.pg_edition.page1": "§lHoş geldiniz§r §l§3Project Genesis'e§r, yeni bir Kahraman ve §linsanlığın umudu§r olarak yüzeye çıkmak ve merkez komutanlık tarafından verilen çeşitli görevleri tamamlamak üzere seçildiniz (veya seçildiniz).",
+  "book.pg_edition.page2": "Projeye dair bilgisi olmayanlar için, Proje Genesis'in neden veya ne olduğu konusunda talihsiz olanlar için, aşağıda felaketin ardından son yıllarda meydana gelen son olayların kısa bir özeti bulunmaktadır.",
+  "book.pg_edition.page3": "§lFelaket§r:\n\nBir araştırma merkezinin patlamasının ardından, radyasyon partiküllerinin yayılması nedeniyle yüzey geniş ölçüde radyasyona maruz kaldı, bu da metro ve diğer yeraltı alanlarına tahliyeyi zorunlu kıldı.",
+  "book.pg_edition.page4": "Gerekli ekipman ya da §2Dönüş Serumu§R kullanmadan yüzey ulaşılmaz olarak kabul edilir.\n\n-Dönüş serumu, merkez komutanlıkta görevlerinizi tamamlayabilmeniz için size uygulanmıştır.",
+  "book.pg_edition.page5": "§lÖnceki yıllardaki olaylar:§r\n\nŞu ana kadar birçok kahraman geri dönmedi (sebebi bilinmiyor) ve yüzeyde hâlâ yaşayan insanların olduğu söyleniyor. Zombiler ve Mutantların varlığı göz önüne alındığında, kahramanlar olmadan topluluklar oluşturamadıkları düşünülmektedir.",
+  "book.pg_edition.page6": "Kahramanların yardımı olmadan topluluklar oluşturamadıkları bilinmektedir.\nÇekirdek'e yakın organizmaların özelliklerinde veya gelişimlerinde değişiklikler gösterdikleri bilinmektedir.",
+  "book.pg_edition.page7": "§lHedefler:§r\n\n-Patlamanın meydana geldiği gizli tesisleri bulun.\n-Radyasyon yayan ve maddeyi ve özelliklerini değiştirme yeteneğine sahip olan 'çekirdeği' etkisiz hale getirin (mutajenler).\n-Mutajenleri etkisiz hale getirin.",
+  "mykey.book.folleto_danado.page1": "§4§l!!UYAR§mI§k!!§4§l§mA§4§l!!§0\n\n§2§oNÜK§3§oL§2§oEAR ACİL DURUM!§m§0\n\n§8§o§mOkumaya devam etmeden önce hemen bir sığınak veya metro sistemi arayın!§0",
+  "mykey.book.folleto_danado.page2": "§mYüzeydeki§0 tüm §8kişiler için.§0\n\n§8Güvenli§0 bir yer §mbulmak önemlidir. §8Saklanın!§0 Ani davranış değişiklikleri veya ani öfke belirtileri gösteren kişilerden kaçının.§0",
+  "mykey.book.folleto_danado.page3": "§8Yağmur yağıyorsa dışarı çıkmaktan kaçının ve §8anti-rad§mi§asyona karşı korunmasınız yoksa önlem alınmalıdır.§0\n\n§8Göl sularını arıtılmadan içmeyin ve suyun sıcaklığını dikkatlice kontrol edin: 10°C §8/ 21°F üzerindeki suya dikkat edin.§0",
+  "mykey.book.folleto_danado.page4": "§8Ceset§0 alanlarından §mu§zak durun§0 ve ASLA onlara §myaklaşmayın§0, ne kadar zararsız veya etkisiz görünseler de. Onların sizi görmelerine izin vermeyin.§0\n\nKendinizi yeraltı barınaklarında güvende tutun ve gereksiz risklerden kaçının.§0 Herhangi bir risk durumu kaçılmalı veya sonlandırılmalıdır.§0",
+  "mykey.book.folleto_danado.page5": "§8Güvende§0 §kKalın§0\nBirlikte kalın ve çevrenizi, sağlığınızı düzenli olarak kontrol edin.§0\n\n§8İmza:§0\nP§kroy§red§mc§rLyc§rmo§8ckdown§0"
+}

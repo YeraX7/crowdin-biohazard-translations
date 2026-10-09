@@ -1,0 +1,14 @@
+{
+  "biohazard.mainmenu.singleplayer": "اللعب الفردي",
+  "biohazard.mainmenu.multiplayer": "اللعب المتعدد",
+  "biohazard.mainmenu.bisect": "أنشئ خادمك مع BisectHosting",
+  "biohazard.mainmenu.bisecthovered": "رمز VoidCube خصم 25 بالمائة",
+  "biohazard.mainmenu.mods": "التعديلات",
+  "biohazard.mainmenu.options": "الخيارات",
+  "biohazard.mainmenu.quitgame": "إنهاء اللعبة",
+  "biohazard.mainmenu.dazercredits": "تصميم القائمة بواسطة DazerDz",
+  "biohazard.startscreen.presstostart": "اضغط ENTER للبدء",
+  "biohazard.startscreen.credits": "مدعوم من Void Cube Studio.",
+  "biohazard.mainmenu.animatedbg.on": "تشغيل الخلفيات المتحركة",
+  "biohazard.mainmenu.animatedbg.off": "إيقاف الخلفيات المتحركة"
+}

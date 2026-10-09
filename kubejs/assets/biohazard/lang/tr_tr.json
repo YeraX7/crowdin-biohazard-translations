@@ -1,0 +1,14 @@
+{
+  "biohazard.mainmenu.singleplayer": "TEK OYUNCULU",
+  "biohazard.mainmenu.multiplayer": "ÇOK OYUNCULU",
+  "biohazard.mainmenu.bisect": "SUNUCUNU BISECTHOSTING İLE OLUŞTUR",
+  "biohazard.mainmenu.bisecthovered": "VOIDCUBE KODU %25 İNDİRİM",
+  "biohazard.mainmenu.mods": "MODLAR",
+  "biohazard.mainmenu.options": "SEÇENEKLER",
+  "biohazard.mainmenu.quitgame": "OYUNDAN ÇIK",
+  "biohazard.mainmenu.dazercredits": "Menü Tasarımı DazerDz",
+  "biohazard.startscreen.presstostart": "Başlamak için ENTER tuşuna basın",
+  "biohazard.startscreen.credits": "Void Cube Studio Tarafından Desteklenmektedir.",
+  "biohazard.mainmenu.animatedbg.on": "Animasyonlu arka planları aç",
+  "biohazard.mainmenu.animatedbg.off": "Animasyonlu arka planları kapat"
+}

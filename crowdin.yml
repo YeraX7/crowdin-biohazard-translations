@@ -1,9 +1,58 @@
-files:
-  - source: biohazard-customs/en_us.json
-    translation: biohazard-customs/%locale_with_underscore%.json
-  - source: ftb-quests/en_us.json
-    translation: ftb-quests/%locale_with_underscore%.json
-  - source: main-menu/en_us.json
-    translation: main-menu/%locale_with_underscore%.json
-  - source: mca/en_us.json
-    translation: mca/%locale_with_underscore%.json
+# Crowdin <-> este repo. Lo usa la GitHub Action oficial (.github/workflows/traducciones.yml).
+# Las rutas empiezan por "/" a propósito: así Crowdin devuelve cada traducción en la misma carpeta que su
+# origen, con el nombre de Minecraft, en vez de meterla en una carpeta por idioma.
+# Credenciales: nunca aquí; van como secretos del repositorio (CROWDIN_PROJECT_ID, CROWDIN_PERSONAL_TOKEN).
+
+"project_id_env": "CROWDIN_PROJECT_ID"
+"api_token_env": "CROWDIN_PERSONAL_TOKEN"
+"base_path": "."
+"preserve_hierarchy": true
+
+# Al cambiar un texto de origen, las traducciones de esa clave se conservan pero pierden la aprobación,
+# para que un corrector las vuelva a mirar. (Para cambios solo de forma, el panel usará update_without_changes.)
+"files": [
+  {
+    "source": "/kubejs/assets/ftbquestlocalizer/lang/en_us.json",
+    "translation": "/kubejs/assets/ftbquestlocalizer/lang/%locale_with_underscore%.json",
+    "update_option": "update_as_unapproved",
+    "languages_mapping": { "locale_with_underscore": {
+      "ar": "ar_sa", "bg": "bg_bg", "de": "de_de", "es-ES": "es_es", "fr": "fr_fr", "it": "it_it",
+      "ja": "ja_jp", "ko": "ko_kr", "pl": "pl_pl", "pt-PT": "pt_pt", "pt-BR": "pt_br", "ru": "ru_ru",
+      "tr": "tr_tr", "zh-CN": "zh_cn", "th": "th_th", "nl": "nl_nl", "sv-SE": "sv_se", "uk": "uk_ua",
+      "vi": "vi_vn", "id": "id_id"
+    } }
+  },
+  {
+    "source": "/kubejs/assets/biohazard/lang/en_us.json",
+    "translation": "/kubejs/assets/biohazard/lang/%locale_with_underscore%.json",
+    "update_option": "update_as_unapproved",
+    "languages_mapping": { "locale_with_underscore": {
+      "ar": "ar_sa", "bg": "bg_bg", "de": "de_de", "es-ES": "es_es", "fr": "fr_fr", "it": "it_it",
+      "ja": "ja_jp", "ko": "ko_kr", "pl": "pl_pl", "pt-PT": "pt_pt", "pt-BR": "pt_br", "ru": "ru_ru",
+      "tr": "tr_tr", "zh-CN": "zh_cn", "th": "th_th", "nl": "nl_nl", "sv-SE": "sv_se", "uk": "uk_ua",
+      "vi": "vi_vn", "id": "id_id"
+    } }
+  },
+  {
+    "source": "/kubejs/assets/mca/lang/en_us.json",
+    "translation": "/kubejs/assets/mca/lang/%locale_with_underscore%.json",
+    "update_option": "update_as_unapproved",
+    "languages_mapping": { "locale_with_underscore": {
+      "ar": "ar_sa", "bg": "bg_bg", "de": "de_de", "es-ES": "es_es", "fr": "fr_fr", "it": "it_it",
+      "ja": "ja_jp", "ko": "ko_kr", "pl": "pl_pl", "pt-PT": "pt_pt", "pt-BR": "pt_br", "ru": "ru_ru",
+      "tr": "tr_tr", "zh-CN": "zh_cn", "th": "th_th", "nl": "nl_nl", "sv-SE": "sv_se", "uk": "uk_ua",
+      "vi": "vi_vn", "id": "id_id"
+    } }
+  },
+  {
+    "source": "/resourcepacks/BiohazardCustoms/assets/minecraft/lang/en_us.json",
+    "translation": "/resourcepacks/BiohazardCustoms/assets/minecraft/lang/%locale_with_underscore%.json",
+    "update_option": "update_as_unapproved",
+    "languages_mapping": { "locale_with_underscore": {
+      "ar": "ar_sa", "bg": "bg_bg", "de": "de_de", "es-ES": "es_es", "fr": "fr_fr", "it": "it_it",
+      "ja": "ja_jp", "ko": "ko_kr", "pl": "pl_pl", "pt-PT": "pt_pt", "pt-BR": "pt_br", "ru": "ru_ru",
+      "tr": "tr_tr", "zh-CN": "zh_cn", "th": "th_th", "nl": "nl_nl", "sv-SE": "sv_se", "uk": "uk_ua",
+      "vi": "vi_vn", "id": "id_id"
+    } }
+  }
+]

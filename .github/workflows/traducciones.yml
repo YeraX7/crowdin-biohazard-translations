@@ -1,0 +1,94 @@
+# Traducciones de Biohazard: sincronización manual con Crowdin. Nada se ejecuta solo.
+# Actions > Traducciones > Run workflow > elegir qué hacer.
+#
+#   bajar-traducciones   trae de Crowdin lo traducido y abre un PR a main (nadie lo mezcla sin mirarlo)
+#   subir-textos         sube a Crowdin los en_us.json de main (textos nuevos o cambiados)
+#   subir-espanol        sube los es_es.json de main a Crowdin como traducción APROBADA (el español es
+#                        nuestro; nunca subir así otros idiomas)
+#
+# Secretos del repositorio necesarios: CROWDIN_PROJECT_ID (853664) y CROWDIN_PERSONAL_TOKEN (token
+# personal de Crowdin con permisos de proyecto, fuentes, traducciones y estado de traducción).
+
+name: Traducciones
+
+on:
+  workflow_dispatch:
+    inputs:
+      accion:
+        description: Qué hacer
+        required: true
+        type: choice
+        default: bajar-traducciones
+        options: [bajar-traducciones, subir-textos, subir-espanol]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: crowdin
+  cancel-in-progress: false
+
+jobs:
+  bajar-traducciones:
+    if: inputs.accion == 'bajar-traducciones'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bajar traducciones de Crowdin y abrir PR
+        uses: crowdin/github-action@v3
+        with:
+          upload_sources: false
+          upload_translations: false
+          download_translations: true
+          localization_branch_name: traducciones-crowdin
+          create_pull_request: true
+          pull_request_title: 'Traducciones nuevas de Crowdin'
+          pull_request_body: 'Traducciones bajadas de Crowdin con la acción manual. Revisar y mezclar.'
+          pull_request_base_branch_name: main
+          commit_message: 'Traducciones de Crowdin'
+          github_user_name: 'Crowdin (acción manual)'
+          github_user_email: 'support+bot@crowdin.com'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+
+  subir-textos:
+    if: inputs.accion == 'subir-textos'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Subir los textos de origen (en_us) a Crowdin
+        uses: crowdin/github-action@v3
+        with:
+          upload_sources: true
+          upload_translations: false
+          download_translations: false
+          push_sources: false
+          push_translations: false
+          create_pull_request: false
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+
+  subir-espanol:
+    if: inputs.accion == 'subir-espanol'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Subir el español como traducción aprobada
+        uses: crowdin/github-action@v3
+        with:
+          upload_sources: false
+          upload_translations: true
+          upload_language: es-ES
+          auto_approve_imported: true
+          import_eq_suggestions: true
+          download_translations: false
+          push_sources: false
+          push_translations: false
+          create_pull_request: false
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
