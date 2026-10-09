@@ -1,36 +1,43 @@
 # Traducciones de Biohazard: Project Genesis
 
 Textos del modpack y sus traducciones, **con la misma estructura que la instancia de Minecraft**: lo que hay
-aquí se copia tal cual dentro de la carpeta de la instancia. Las traducciones se hacen en Crowdin
+aqui se copia tal cual dentro de la carpeta de la instancia. Las traducciones se hacen en Crowdin
 (https://crowdin.com/project/biohazard); este repositorio es la copia maestra y el historial.
 
-| Carpeta | Qué es | Origen |
+**Este repositorio no es el modpack.** Cambiar algo aqui no cambia nada para los jugadores: los textos
+solo llegan al juego cuando alguien los publica en el pack.
+
+| Carpeta | Que es | Archivo de Crowdin |
 |---|---|---|
-| `kubejs/assets/ftbquestlocalizer/lang/` | Misiones (FTB Quests), ~1.636 textos | `en_us.json` |
-| `kubejs/assets/biohazard/lang/` | Menú principal, 12 textos | `en_us.json` |
-| `kubejs/assets/mca/lang/` | Introducción de MCA, 4 textos | `en_us.json` |
-| `resourcepacks/BiohazardCustoms/assets/minecraft/lang/` | Dos libros, 12 textos. En la instancia va **comprimido** como `resourcepacks/BiohazardCustoms.zip` | `en_us.json` |
+| `kubejs/assets/ftbquestlocalizer/lang/` | Misiones (FTB Quests), 1.636 textos | `ftb-quests/en_us.json` (rama `[YeraX7.crowdin-biohazard-translations] main`) |
+| `kubejs/assets/biohazard/lang/` | Menu principal, 12 textos | `main-menu-RP-en_us.json` |
+| `kubejs/assets/mca/lang/` | Introduccion de MCA, 4 textos | `mca_introduction-en_us.json` |
+| `resourcepacks/BiohazardCustoms/assets/minecraft/lang/` | Dos libros, 12 textos. En la instancia van **dentro** de `resourcepacks/BiohazardCustoms.zip` (junto con imagenes que aqui no estan) | `bh_customs-RP-en_us.json` |
 
-- El origen en Crowdin es el **inglés** (`en_us.json`). El español (`es_es.json`) es nuestro y se sube como
-  traducción aprobada. `es_mx.json` no se guarda: se genera copiando `es_es.json` al exportar.
-- Idiomas: ar_sa, bg_bg, de_de, es_es, fr_fr, it_it, ja_jp, ko_kr, pl_pl, pt_br, pt_pt, ru_ru, tr_tr, zh_cn,
-  th_th, nl_nl, sv_se, uk_ua, vi_vn, id_id (los seis últimos, añadidos el 09-10-2026, aún sin traducir).
-- Las claves que no existen en `en_us.json` no se guardan en ningún idioma.
+- Origen en Crowdin: el **ingles** (`en_us.json`). El espanol es nuestro. `es_mx.json` no esta en Crowdin.
+- Los `.json` se guardan **byte a byte** (`.gitattributes`), sin reformatear.
+- Idiomas en Crowdin (20): ar, bg, de, es-ES, fr, it, ja, ko, pl, pt-PT, pt-BR, ru, tr, zh-CN, th, nl, sv-SE,
+  uk, vi, id. Los siete ultimos se anadieron el 09-10-2026 y aun no tienen traducciones.
 
-## Cómo se mueve todo (nada es automático)
+## Como se mueve todo (nada es automatico)
 
-En **Actions → Traducciones → Run workflow**:
+**Actions → Traducciones → Run workflow**:
 
-1. **subir-textos**: sube a Crowdin los `en_us.json` de `main`. Hacerlo después de cambiar textos.
-2. **subir-espanol**: sube los `es_es.json` como traducción aprobada.
-3. **bajar-traducciones**: trae de Crowdin lo traducido y abre un pull request a `main`. Se revisa y se mezcla.
+1. **comprobar**: ensayo que no cambia nada. Empezar siempre por aqui.
+2. **bajar-traducciones**: trae de Crowdin lo traducido a una rama nueva y abre un pull request a `main`.
+3. **subir-textos**: sube a Crowdin los `en_us.json` de `main` (cuando cambian los textos del juego).
 
-Después, lo que hay en `main` se copia a la instancia (o lo hace el panel del estudio). Secretos necesarios en
-el repositorio: `CROWDIN_PROJECT_ID` y `CROWDIN_PERSONAL_TOKEN`.
+El espanol no se sube desde aqui (ver el comentario de `.github/workflows/traducciones.yml`).
+
+Secretos necesarios en el repositorio: `CROWDIN_PROJECT_ID` y `CROWDIN_PERSONAL_TOKEN`. Para que la accion
+pueda abrir el pull request: Settings → Actions → General → "Allow GitHub Actions to create and approve
+pull requests" (si no, deja la rama hecha y el PR se abre a mano).
 
 ## Historia
 
-Hasta el 09-10-2026 el repo tenía carpetas `ftb-quests/`, `main-menu/`, `mca/` y `biohazard-customs/` y la
-integración automática de Crowdin, que escribía las traducciones con una carpeta de idioma delante
-(`bg/ftb-quests/bg_bg.json`) porque las rutas de `crowdin.yml` no empezaban por `/`. Se reestructuró a las
-rutas de la instancia y se pasó a la acción manual.
+- Hasta el 09-10-2026: carpetas `ftb-quests/`, `main-menu/`, `mca/`, `biohazard-customs/` y la integracion
+  automatica de Crowdin (cada hora), que escribia las traducciones con una carpeta de idioma delante
+  (`bg/ftb-quests/bg_bg.json`) porque las rutas de `crowdin.yml` no empezaban por `/`.
+- 09-10-2026: `main` pasa a ser una copia exacta (byte a byte, 58 archivos) de los textos de la instancia
+  publicada de CurseForge; la integracion automatica queda pausada y la sustituye la accion manual.
+  Copias de todo lo anterior: `panel-estudio/backups/2026-10-09/` en el PC del estudio.

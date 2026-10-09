@@ -1,1 +1,3 @@
+# Los .json se guardan tal cual, byte a byte (saltos de linea incluidos): asi el repo es identico a la instancia.
+*.json -text
 * text=auto eol=lf

@@ -1,14 +1,14 @@
 {
-  "biohazard.mainmenu.singleplayer": "ЕДИНИЧЕН ИГРАЧ",
-  "biohazard.mainmenu.multiplayer": "МНОГОИГРАЧЕН РЕЖИМ",
-  "biohazard.mainmenu.bisect": "СЪЗДАЙТЕ ВАШ СЪРВЪР С BISECTHOSTING",
-  "biohazard.mainmenu.bisecthovered": "КОД VOIDCUBE 25% ОТСТЪПКА",
-  "biohazard.mainmenu.mods": "МОДОВЕ",
-  "biohazard.mainmenu.options": "НАСТРОЙКИ",
-  "biohazard.mainmenu.quitgame": "ИЗХОД ОТ ИГРАТА",
-  "biohazard.mainmenu.dazercredits": "Дизайн на менюто от DazerDz",
-  "biohazard.startscreen.presstostart": "Натиснете ENTER за старт",
-  "biohazard.startscreen.credits": "Задвижвано от Void Cube Studio.",
-  "biohazard.mainmenu.animatedbg.on": "Включете анимирани фонове",
-  "biohazard.mainmenu.animatedbg.off": "Изключете анимирани фонове"
+    "biohazard.mainmenu.singleplayer": "ЕДИНИЧЕН ИГРАЧ",
+    "biohazard.mainmenu.multiplayer": "МНОГОИГРАЧЕН РЕЖИМ",
+    "biohazard.mainmenu.bisect": "СЪЗДАЙТЕ ВАШ СЪРВЪР С BISECTHOSTING",
+    "biohazard.mainmenu.bisecthovered": "КОД VOIDCUBE 25% ОТСТЪПКА",
+    "biohazard.mainmenu.mods": "МОДОВЕ",
+    "biohazard.mainmenu.options": "НАСТРОЙКИ",
+    "biohazard.mainmenu.quitgame": "ИЗХОД ОТ ИГРАТА",
+    "biohazard.mainmenu.dazercredits": "Дизайн на менюто от DazerDz",
+    "biohazard.startscreen.presstostart": "Натиснете ENTER за старт",
+    "biohazard.startscreen.credits": "Задвижвано от Void Cube Studio.",
+    "biohazard.mainmenu.animatedbg.on": "Включете анимирани фонове",
+    "biohazard.mainmenu.animatedbg.off": "Изключете анимирани фонове"
 }

@@ -1,0 +1,24 @@
+# Crowdin <-> este repo: las misiones (FTB Quests). En Crowdin estan en la rama
+# "[YeraX7.crowdin-biohazard-translations] main" (la creo la antigua integracion automatica, hoy pausada),
+# como ftb-quests/en_us.json. La accion pasa el nombre de la rama aparte (crowdin_branch_name).
+# Ver crowdin.yml para el resto de explicaciones.
+
+"project_id_env": "CROWDIN_PROJECT_ID"
+"api_token_env": "CROWDIN_PERSONAL_TOKEN"
+"base_path": "."
+"preserve_hierarchy": true
+
+"files": [
+  {
+    "source": "/kubejs/assets/ftbquestlocalizer/lang/en_us.json",
+    "dest": "/ftb-quests/en_us.json",
+    "translation": "/kubejs/assets/ftbquestlocalizer/lang/%locale_with_underscore%.json",
+    "update_option": "update_as_unapproved",
+    "languages_mapping": { "locale_with_underscore": {
+      "ar": "ar_sa", "bg": "bg_bg", "de": "de_de", "es-ES": "es_es", "fr": "fr_fr", "it": "it_it",
+      "ja": "ja_jp", "ko": "ko_kr", "pl": "pl_pl", "pt-PT": "pt_pt", "pt-BR": "pt_br", "ru": "ru_ru",
+      "tr": "tr_tr", "zh-CN": "zh_cn", "th": "th_th", "nl": "nl_nl", "sv-SE": "sv_se", "uk": "uk_ua",
+      "vi": "vi_vn", "id": "id_id"
+    } }
+  }
+]

@@ -1,14 +1,14 @@
 {
-  "biohazard.mainmenu.singleplayer": "TRYB DLA JEDNEGO GRACZA",
-  "biohazard.mainmenu.multiplayer": "TRYB WIELOOSOBOWY",
-  "biohazard.mainmenu.bisect": "STWÓRZ SWÓJ SERWER Z BISECTHOSTING",
-  "biohazard.mainmenu.bisecthovered": "KOD VOIDCUBE 25 PROCENT ZNIŻKI",
-  "biohazard.mainmenu.mods": "MODYFIKACJE",
-  "biohazard.mainmenu.options": "OPCJE",
-  "biohazard.mainmenu.quitgame": "ZAKOŃCZ GRĘ",
-  "biohazard.mainmenu.dazercredits": "Projekt menu: DazerDz",
-  "biohazard.startscreen.presstostart": "Naciśnij ENTER, aby rozpocząć",
-  "biohazard.startscreen.credits": "Wspierane przez Void Cube Studio.",
-  "biohazard.mainmenu.animatedbg.on": "Włącz animowane tła",
-  "biohazard.mainmenu.animatedbg.off": "Wyłącz animowane tła"
+    "biohazard.mainmenu.singleplayer": "TRYB DLA JEDNEGO GRACZA",
+    "biohazard.mainmenu.multiplayer": "TRYB WIELOOSOBOWY",
+    "biohazard.mainmenu.bisect": "STWÓRZ SWÓJ SERWER Z BISECTHOSTING",
+    "biohazard.mainmenu.bisecthovered": "KOD VOIDCUBE 25 PROCENT ZNIŻKI",
+    "biohazard.mainmenu.mods": "MODYFIKACJE",
+    "biohazard.mainmenu.options": "OPCJE",
+    "biohazard.mainmenu.quitgame": "ZAKOŃCZ GRĘ",
+    "biohazard.mainmenu.dazercredits": "Projekt menu: DazerDz",
+    "biohazard.startscreen.presstostart": "Naciśnij ENTER, aby rozpocząć",
+    "biohazard.startscreen.credits": "Wspierane przez Void Cube Studio.",
+    "biohazard.mainmenu.animatedbg.on": "Włącz animowane tła",
+    "biohazard.mainmenu.animatedbg.off": "Wyłącz animowane tła"
 }

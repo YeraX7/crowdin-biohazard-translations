@@ -1,14 +1,14 @@
 {
-  "biohazard.mainmenu.singleplayer": "싱글플레이어",
-  "biohazard.mainmenu.multiplayer": "멀티플레이어",
-  "biohazard.mainmenu.bisect": "BisectHosting으로 서버 생성하기",
-  "biohazard.mainmenu.bisecthovered": "코드 VOIDCUBE 25% 할인",
-  "biohazard.mainmenu.mods": "모드",
-  "biohazard.mainmenu.options": "옵션",
-  "biohazard.mainmenu.quitgame": "게임 종료",
-  "biohazard.mainmenu.dazercredits": "메뉴 디자인: DazerDz",
-  "biohazard.startscreen.presstostart": "시작하려면 ENTER를 누르세요",
-  "biohazard.startscreen.credits": "Void Cube Studio 제공.",
-  "biohazard.mainmenu.animatedbg.on": "애니메이션 배경 켜기",
-  "biohazard.mainmenu.animatedbg.off": "애니메이션 배경 끄기"
+    "biohazard.mainmenu.singleplayer": "싱글플레이어",
+    "biohazard.mainmenu.multiplayer": "멀티플레이어",
+    "biohazard.mainmenu.bisect": "BisectHosting으로 서버 생성하기",
+    "biohazard.mainmenu.bisecthovered": "코드 VOIDCUBE 25% 할인",
+    "biohazard.mainmenu.mods": "모드",
+    "biohazard.mainmenu.options": "옵션",
+    "biohazard.mainmenu.quitgame": "게임 종료",
+    "biohazard.mainmenu.dazercredits": "메뉴 디자인: DazerDz",
+    "biohazard.startscreen.presstostart": "시작하려면 ENTER를 누르세요",
+    "biohazard.startscreen.credits": "Void Cube Studio 제공.",
+    "biohazard.mainmenu.animatedbg.on": "애니메이션 배경 켜기",
+    "biohazard.mainmenu.animatedbg.off": "애니메이션 배경 끄기"
 }
