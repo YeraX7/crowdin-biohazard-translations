@@ -1,0 +1,14 @@
+{
+    "biohazard.mainmenu.singleplayer": "SOLO",
+    "biohazard.mainmenu.multiplayer": "MULTIPLAYER",
+    "biohazard.mainmenu.bisect": "MAAK JE SERVER MET BISECTHOSTING",
+    "biohazard.mainmenu.bisecthovered": "CODE VOIDCUBE 25 PROCENT KORTING",
+    "biohazard.mainmenu.mods": "MODS",
+    "biohazard.mainmenu.options": "OPTIES",
+    "biohazard.mainmenu.quitgame": "SPEL AFSLUITEN",
+    "biohazard.mainmenu.dazercredits": "Menuontwerp door DazerDz",
+    "biohazard.startscreen.presstostart": "Druk op ENTER om te starten",
+    "biohazard.startscreen.credits": "Mogelijk gemaakt door Void Cube Studio.",
+    "biohazard.mainmenu.animatedbg.on": "Geanimeerde achtergronden inschakelen",
+    "biohazard.mainmenu.animatedbg.off": "Geanimeerde achtergronden uitschakelen"
+}
