@@ -1,0 +1,14 @@
+{
+    "biohazard.mainmenu.singleplayer": "ENSPELARLÄGE",
+    "biohazard.mainmenu.multiplayer": "FLERSPELARLÄGE",
+    "biohazard.mainmenu.bisect": "SKAPA DIN SERVER MED BISECTHOSTING",
+    "biohazard.mainmenu.bisecthovered": "KOD VOIDCUBE 25 PROCENT RABATT",
+    "biohazard.mainmenu.mods": "MODDAR",
+    "biohazard.mainmenu.options": "INSTÄLLNINGAR",
+    "biohazard.mainmenu.quitgame": "AVSLUTA SPELET",
+    "biohazard.mainmenu.dazercredits": "Menydesign av DazerDz",
+    "biohazard.startscreen.presstostart": "Tryck på RETUR för att starta",
+    "biohazard.startscreen.credits": "Drivs av Void Cube Studio.",
+    "biohazard.mainmenu.animatedbg.on": "Aktivera animerade bakgrunder",
+    "biohazard.mainmenu.animatedbg.off": "Inaktivera animerade bakgrunder"
+}
