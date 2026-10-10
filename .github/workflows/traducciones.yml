@@ -4,6 +4,8 @@
 #   comprobar            ensayo sin cambiar nada: dice que subiria y que bajaria (empezar siempre por aqui)
 #   bajar-traducciones   trae de Crowdin lo traducido a una rama "traducciones-crowdin" y abre un pull
 #                        request a main. main no cambia hasta que alguien lo revisa y lo mezcla.
+#                        Baja cada archivo por su id con la API (.github/scripts/bajar-de-crowdin.py): el CLI
+#                        lo descartaba todo porque las rutas de exportacion guardadas en Crowdin son las viejas.
 #                        Cada archivo conserva su formato exacto (.github/scripts/conservar-formato.py):
 #                        el PR solo muestra textos que cambian de verdad. Campo "idiomas" opcional para
 #                        traer solo algunos (codigos de Minecraft, p. ej. pt_br,th_th).
@@ -56,7 +58,7 @@ jobs:
           config: crowdin.yml
           dryrun_action: true
           upload_sources: true
-          download_translations: true
+          download_translations: false
           push_translations: false
           create_pull_request: false
       - name: Ensayo - misiones
@@ -66,44 +68,27 @@ jobs:
           crowdin_branch_name: ${{ env.RAMA_MISIONES }}
           dryrun_action: true
           upload_sources: true
-          download_translations: true
+          download_translations: false
           push_translations: false
           create_pull_request: false
+      - name: Ensayo - que bajaria (archivos de Crowdin encontrados y rutas)
+        run: python3 .github/scripts/bajar-de-crowdin.py "" --ensayo
 
   bajar-traducciones:
     if: inputs.accion == 'bajar-traducciones'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Bajar - archivos pequenos
-        uses: crowdin/github-action@v3
-        with:
-          config: crowdin.yml
-          user: auto
-          upload_sources: false
-          download_translations: true
-          skip_untranslated_strings: true
-          push_translations: false
-          create_pull_request: false
-      - name: Bajar - misiones
-        uses: crowdin/github-action@v3
-        with:
-          config: crowdin-misiones.yml
-          crowdin_branch_name: ${{ env.RAMA_MISIONES }}
-          user: auto
-          upload_sources: false
-          download_translations: true
-          skip_untranslated_strings: true
-          push_translations: false
-          create_pull_request: false
-      - name: Conservar el formato de cada archivo (y filtrar idiomas)
-        # Crowdin escribe todos los JSON con su propio formato: esto deja solo los cambios de texto reales,
-        # con el formato exacto que ya tenia cada archivo. El contenedor de Crowdin los escribe como root.
+      - name: Bajar de Crowdin (cada archivo por su id, a las rutas de la instancia)
         env:
           IDIOMAS: ${{ inputs.idiomas }}
-        run: |
-          sudo chown -R "$(id -u):$(id -g)" kubejs resourcepacks
-          python3 .github/scripts/conservar-formato.py "$IDIOMAS"
+        run: python3 .github/scripts/bajar-de-crowdin.py "$IDIOMAS"
+      - name: Conservar el formato de cada archivo (y filtrar idiomas)
+        # Crowdin escribe todos los JSON con su propio formato: esto deja solo los cambios de texto reales,
+        # con el formato exacto que ya tenia cada archivo.
+        env:
+          IDIOMAS: ${{ inputs.idiomas }}
+        run: python3 .github/scripts/conservar-formato.py "$IDIOMAS"
       - name: Rama y pull request
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
