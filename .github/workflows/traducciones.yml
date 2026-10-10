@@ -4,6 +4,9 @@
 #   comprobar            ensayo sin cambiar nada: dice que subiria y que bajaria (empezar siempre por aqui)
 #   bajar-traducciones   trae de Crowdin lo traducido a una rama "traducciones-crowdin" y abre un pull
 #                        request a main. main no cambia hasta que alguien lo revisa y lo mezcla.
+#                        Cada archivo conserva su formato exacto (.github/scripts/conservar-formato.py):
+#                        el PR solo muestra textos que cambian de verdad. Campo "idiomas" opcional para
+#                        traer solo algunos (codigos de Minecraft, p. ej. pt_br,th_th).
 #   subir-textos         sube a Crowdin los en_us.json de main (textos nuevos o cambiados del juego)
 #
 # El espanol no se sube desde aqui: lo hace el panel del estudio despues de revisarlo (la instancia tiene
@@ -22,6 +25,11 @@ on:
         type: choice
         default: comprobar
         options: [comprobar, bajar-traducciones, subir-textos]
+      idiomas:
+        description: Solo para bajar-traducciones. Codigos de Minecraft separados por comas (p. ej. pt_br,th_th). Vacio = todos
+        required: false
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -88,6 +96,14 @@ jobs:
           skip_untranslated_strings: true
           push_translations: false
           create_pull_request: false
+      - name: Conservar el formato de cada archivo (y filtrar idiomas)
+        # Crowdin escribe todos los JSON con su propio formato: esto deja solo los cambios de texto reales,
+        # con el formato exacto que ya tenia cada archivo. El contenedor de Crowdin los escribe como root.
+        env:
+          IDIOMAS: ${{ inputs.idiomas }}
+        run: |
+          sudo chown -R "$(id -u):$(id -g)" kubejs resourcepacks
+          python3 .github/scripts/conservar-formato.py "$IDIOMAS"
       - name: Rama y pull request
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
