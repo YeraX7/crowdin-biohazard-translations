@@ -1,0 +1,14 @@
+{
+    "biohazard.mainmenu.singleplayer": "ОДИНОЧНА ГРА",
+    "biohazard.mainmenu.multiplayer": "МЕРЕЖЕВА ГРА",
+    "biohazard.mainmenu.bisect": "СТВОРИ СВІЙ СЕРВЕР З BISECTHOSTING",
+    "biohazard.mainmenu.bisecthovered": "КОД VOIDCUBE — ЗНИЖКА 25 ВІДСОТКІВ",
+    "biohazard.mainmenu.mods": "МОДИ",
+    "biohazard.mainmenu.options": "НАЛАШТУВАННЯ",
+    "biohazard.mainmenu.quitgame": "ВИЙТИ З ГРИ",
+    "biohazard.mainmenu.dazercredits": "Дизайн меню: DazerDz",
+    "biohazard.startscreen.presstostart": "Натисни ENTER, щоб почати",
+    "biohazard.startscreen.credits": "Працює на Void Cube Studio.",
+    "biohazard.mainmenu.animatedbg.on": "Увімкнути анімовані фони",
+    "biohazard.mainmenu.animatedbg.off": "Вимкнути анімовані фони"
+}

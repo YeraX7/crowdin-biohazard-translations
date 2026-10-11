@@ -1,0 +1,14 @@
+{
+    "biohazard.mainmenu.singleplayer": "MAIN SENDIRI",
+    "biohazard.mainmenu.multiplayer": "MULTIPEMAIN",
+    "biohazard.mainmenu.bisect": "BUAT SERVERMU DENGAN BISECTHOSTING",
+    "biohazard.mainmenu.bisecthovered": "KODE VOIDCUBE DISKON 25 PERSEN",
+    "biohazard.mainmenu.mods": "MOD",
+    "biohazard.mainmenu.options": "OPSI",
+    "biohazard.mainmenu.quitgame": "KELUAR GAME",
+    "biohazard.mainmenu.dazercredits": "Desain Menu oleh DazerDz",
+    "biohazard.startscreen.presstostart": "Tekan ENTER untuk memulai",
+    "biohazard.startscreen.credits": "Didukung oleh Void Cube Studio.",
+    "biohazard.mainmenu.animatedbg.on": "Aktifkan latar belakang animasi",
+    "biohazard.mainmenu.animatedbg.off": "Nonaktifkan latar belakang animasi"
+}
