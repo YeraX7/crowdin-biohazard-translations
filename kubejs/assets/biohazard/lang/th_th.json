@@ -1,0 +1,14 @@
+{
+    "biohazard.mainmenu.singleplayer": "เล่นคนเดียว",
+    "biohazard.mainmenu.multiplayer": "ผู้เล่นหลายคน",
+    "biohazard.mainmenu.bisect": "สร้างเซิร์ฟเวอร์ของคุณกับ BISECTHOSTING",
+    "biohazard.mainmenu.bisecthovered": "โค้ด VOIDCUBE ลด 25 เปอร์เซ็นต์",
+    "biohazard.mainmenu.mods": "ม็อด",
+    "biohazard.mainmenu.options": "ตัวเลือก",
+    "biohazard.mainmenu.quitgame": "ออกจากเกม",
+    "biohazard.mainmenu.dazercredits": "ออกแบบเมนูโดย DazerDz",
+    "biohazard.startscreen.presstostart": "กด ENTER เพื่อเริ่ม",
+    "biohazard.startscreen.credits": "ขับเคลื่อนโดย Void Cube Studio",
+    "biohazard.mainmenu.animatedbg.on": "เปิดพื้นหลังเคลื่อนไหว",
+    "biohazard.mainmenu.animatedbg.off": "ปิดพื้นหลังเคลื่อนไหว"
+}
